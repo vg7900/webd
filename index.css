@@ -1,0 +1,152 @@
+header {
+    background-image: url(header.jpg);
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+body {
+    width: 100%;
+}
+
+#title-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+}
+
+nav {
+    background-color: green;
+    border: 2px red solid;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+#search {
+    vertical-align: center;
+}
+
+.banner {
+    background-color: red;
+    width: 200px;
+    height: 60px;
+    margin: 100px;
+}
+
+#h1-link {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    width: 80px;
+    padding: 3px;
+    margin: 5px;
+}
+
+#h1-link:hover {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    width: 100px;
+    background-color: red;
+    padding: 3px;
+    margin: 5px;
+    color: green;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section {
+    font-family: 'Roboto';
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 24px;
+    background-color: lime;
+}
+
+.section-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:visited {
+    color: blue;
+}
+
+
+/*
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-center;
+}
+*/
+
+.footer-left {
+    text-align: center;
+    background-color: red;
+}
+
+
+/*
+.container1>.footer-right {
+    width: 50%;
+    background-color: blue;
+}
+
+.footer-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+    padding: 5px;
+}*/
+
+@media all and (max-width:600px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container>li {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:400px) {
+    .container>li {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
